@@ -1,6 +1,5 @@
 import Header from "../components/Header";
 import ProductsGrid from "../components/ProductsGrid";
-import "./HomePage.css";
 
 function HomePage() {
   return (
