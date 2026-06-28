@@ -1,5 +1,21 @@
+import ProductContainer from "./ProductContainer";
+
 import athleticCottonSocks from "/src/assets/products/athletic-cotton-socks-6-pairs.jpg";
+import intermediateBasketball from "../assets/products/intermediate-composite-basketball.jpg";
+import adultsCottonTshirt from "../assets/products/adults-plain-cotton-tshirt-2-pack-teal.jpg";
+
+// Ratings import
+import rating0 from "../assets/ratings/rating-0.png";
+import rating5 from "../assets/ratings/rating-5.png";
+import rating10 from "../assets/ratings/rating-10.png";
+import rating15 from "../assets/ratings/rating-15.png";
+import rating20 from "../assets/ratings/rating-20.png";
+import rating25 from "../assets/ratings/rating-25.png";
+import rating30 from "../assets/ratings/rating-30.png";
+import rating35 from "../assets/ratings/rating-35.png";
+import rating40 from "../assets/ratings/rating-40.png";
 import rating45 from "../assets/ratings/rating-45.png";
+import rating50 from "../assets/ratings/rating-50.png";
 
 import "./ProductsGrid.css";
 
@@ -7,146 +23,32 @@ function ProductsGrid() {
   return (
     <div className="home-page">
       <div className="products-grid">
-        <div className="product-container">
-          <div className="product-image-container">
-            <img className="product-image" src={athleticCottonSocks} />
-          </div>
+        <ProductContainer
+          productImage={athleticCottonSocks}
+          productName="Black and Gray Athletic Cotton Socks - 6 Pairs"
+          productRatingStars={rating45}
+          productRatingCount={87}
+          productPrice={10.9}
+          productQuantity={10}
+        />
 
-          <div className="product-name limit-text-to-2-lines">
-            Black and Gray Athletic Cotton Socks - 6 Pairs
-          </div>
+        <ProductContainer
+          productImage={intermediateBasketball}
+          productName="Intermediate Size Basketball"
+          productRatingStars={rating40}
+          productRatingCount={127}
+          productPrice={20.95}
+          productQuantity={10}
+        />
 
-          <div className="product-rating-container">
-            <img className="product-rating-stars" src={rating45} />
-            <div className="product-rating-count link-primary">87</div>
-          </div>
-
-          <div className="product-price">$10.90</div>
-
-          <div className="product-quantity-container">
-            <select>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-          </div>
-
-          <div className="product-spacer"></div>
-
-          <div className="added-to-cart">
-            <img src="images/icons/checkmark.png" />
-            Added
-          </div>
-
-          <button className="add-to-cart-button button-primary">
-            Add to Cart
-          </button>
-        </div>
-
-        <div className="product-container">
-          <div className="product-image-container">
-            <img
-              className="product-image"
-              src="images/products/intermediate-composite-basketball.jpg"
-            />
-          </div>
-
-          <div className="product-name limit-text-to-2-lines">
-            Intermediate Size Basketball
-          </div>
-
-          <div className="product-rating-container">
-            <img
-              className="product-rating-stars"
-              src="images/ratings/rating-40.png"
-            />
-            <div className="product-rating-count link-primary">127</div>
-          </div>
-
-          <div className="product-price">$20.95</div>
-
-          <div className="product-quantity-container">
-            <select>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-          </div>
-
-          <div className="product-spacer"></div>
-
-          <div className="added-to-cart">
-            <img src="images/icons/checkmark.png" />
-            Added
-          </div>
-
-          <button className="add-to-cart-button button-primary">
-            Add to Cart
-          </button>
-        </div>
-
-        <div className="product-container">
-          <div className="product-image-container">
-            <img
-              className="product-image"
-              src="images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg"
-            />
-          </div>
-
-          <div className="product-name limit-text-to-2-lines">
-            Adults Plain Cotton T-Shirt - 2 Pack
-          </div>
-
-          <div className="product-rating-container">
-            <img
-              className="product-rating-stars"
-              src="images/ratings/rating-45.png"
-            />
-            <div className="product-rating-count link-primary">56</div>
-          </div>
-
-          <div className="product-price">$7.99</div>
-
-          <div className="product-quantity-container">
-            <select>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-          </div>
-
-          <div className="product-spacer"></div>
-
-          <div className="added-to-cart">
-            <img src="images/icons/checkmark.png" />
-            Added
-          </div>
-
-          <button className="add-to-cart-button button-primary">
-            Add to Cart
-          </button>
-        </div>
+        <ProductContainer
+          productImage={adultsCottonTshirt}
+          productName="Adults Plain Cotton T-Shirt - 2 Pack"
+          productRatingStars={rating45}
+          productRatingCount={56}
+          productPrice={7.99}
+          productQuantity={10}
+        />
       </div>
     </div>
   );
