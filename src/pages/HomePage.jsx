@@ -4,6 +4,8 @@ import ProductsGrid from "../components/ProductsGrid";
 function HomePage() {
   return (
     <>
+      <title>E-commerce - Home</title>
+
       <Header />
       <ProductsGrid />
     </>
