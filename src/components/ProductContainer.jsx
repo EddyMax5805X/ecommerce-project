@@ -8,6 +8,7 @@ function ProductContainer({
   productPrice,
 }) {
   return (
+    //851424120
     <div className="product-container">
       <div className="product-image-container">
         <img className="product-image" src={productImage} />

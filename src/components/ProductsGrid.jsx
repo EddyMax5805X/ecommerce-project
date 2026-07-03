@@ -4,6 +4,14 @@ import "./ProductsGrid.css";
 import { products } from "/starting-code/data/products";
 
 function ProductsGrid() {
+  fetch("http://localhost:3000/api/products")
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+    });
+
   return (
     <div className="home-page">
       <div className="products-grid">
