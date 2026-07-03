@@ -25,6 +25,7 @@ function OrderContainer({ orderDate, orderTotal, orderID, orderProducts }) {
         {orderProducts.map((orderProduct) => {
           return (
             <OrderProduct
+              key={crypto.randomUUID()}
               productImage={orderProduct.productImage}
               productName={orderProduct.productName}
               productArriveDate={orderProduct.productArriveDate}

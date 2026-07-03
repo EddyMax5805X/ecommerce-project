@@ -1,13 +1,17 @@
-import ProductContainer from "./ProductContainer";
-
-import "./ProductsGrid.css";
-import { products } from "/starting-code/data/products";
 import axios from "axios";
+import { useEffect, useState } from "react";
+
+import ProductContainer from "./ProductContainer";
+import "./ProductsGrid.css";
 
 function ProductsGrid() {
-  axios.get("http://localhost:3000/api/products").then((response) => {
-    console.log(response.data);
-  });
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:3000/api/products").then(({ data }) => {
+      setProducts(data);
+    });
+  }, []);
 
   return (
     <div className="home-page">
