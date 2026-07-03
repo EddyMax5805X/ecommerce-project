@@ -6,7 +6,6 @@ function ProductContainer({
   productRatingStars,
   productRatingCount,
   productPrice,
-  productQuantity,
 }) {
   return (
     <div className="product-container">
@@ -17,13 +16,16 @@ function ProductContainer({
       <div className="product-name limit-text-to-2-lines">{productName}</div>
 
       <div className="product-rating-container">
-        <img className="product-rating-stars" src={productRatingStars} />
+        <img
+          className="product-rating-stars"
+          src={`/src/assets/ratings/rating-${productRatingStars * 10}.png`}
+        />
         <div className="product-rating-count link-primary">
           {productRatingCount}
         </div>
       </div>
 
-      <div className="product-price">${productPrice}</div>
+      <div className="product-price">MZN {productPrice.toFixed(2)}</div>
 
       <div className="product-quantity-container">
         <select>

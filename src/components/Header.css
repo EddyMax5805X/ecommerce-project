@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 .header {
-  background-color: rgb(8, 79, 45);
+  background-color: rgb(0, 102, 102);
   color: white;
   padding-left: 15px;
   padding-right: 15px;
@@ -41,24 +41,8 @@
 }
 
 .header .logo {
-  height: 26px;
+  height: 30px;
   margin-top: 1px;
-}
-
-.header .mobile-logo {
-  display: none;
-}
-
-@media (max-width: 675px) {
-  .header .logo {
-    display: none;
-  }
-
-  .header .mobile-logo {
-    display: block;
-    height: 26px;
-    margin-top: 1px;
-  }
 }
 
 .header .middle-section {
@@ -83,7 +67,7 @@
 }
 
 .header .search-button {
-  background-color: rgb(186, 255, 190);
+  background-color: rgb(14, 173, 173);
   border: none;
   width: 45px;
   height: 40px;

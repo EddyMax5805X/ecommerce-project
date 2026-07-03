@@ -1,5 +1,4 @@
-import logoWhite from "/src/assets/logo-white.png";
-import mobileLogoWhite from "../assets/mobile-logo-white.png";
+import logoWhite from "/src/assets/letrasCS_dedicated_white.svg";
 import searchIcon from "../assets/icons/search-icon.png";
 import cartIcon from "../assets/icons/cart-icon.png";
 import { NavLink } from "react-router";
@@ -11,8 +10,7 @@ export default function Header() {
     <div className="header">
       <div className="left-section">
         <NavLink to="/" className="header-link">
-          <img className="logo" src="letrasCS_dedicated.svg" />
-          <img className="mobile-logo" src={mobileLogoWhite} />
+          <img className="logo" src={logoWhite} />
         </NavLink>
       </div>
 

@@ -1,5 +1,4 @@
-import logo from "/src/assets/logo.png";
-import mobileLogo from "/src/assets/mobile-logo.png";
+import logo from "/src/assets/letrasCS_dedicated_coloured.svg";
 import checkoutLockIcon from "/src/assets/icons/checkout-lock-icon.png";
 
 import "./CheckoutHeader.css";
@@ -11,8 +10,7 @@ function CheckoutHeader() {
       <div className="header-content">
         <div className="checkout-header-left-section">
           <Link to="/">
-            <img className="logo" src="letrasCS_dedicated.svg" />
-            <img className="mobile-logo" src={mobileLogo} />
+            <img className="logo" src={logo} />
           </Link>
         </div>
 
