@@ -1,7 +1,7 @@
-import CheckoutHeader from "../components/CheckoutHeader";
+import CheckoutHeader from "./CheckoutHeader";
 
 import athleticCottonSocks from "/src/assets/products/athletic-cotton-socks-6-pairs.jpg";
-import intermediateBasketball from "../assets/products/intermediate-composite-basketball.jpg";
+import intermediateBasketball from "/src/assets/products/intermediate-composite-basketball.jpg";
 
 import "./CheckoutPage.css";
 

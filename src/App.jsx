@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router";
 
 import "./App.css";
 import HomePage from "./pages/homePage";
-import CheckoutPage from "./pages/CheckoutPage";
+import CheckoutPage from "./pages/checkout/CheckoutPage";
 import OrdersPage from "./pages/ordersPage";
 import TrackingPage from "./pages/TrackingPage";
 
