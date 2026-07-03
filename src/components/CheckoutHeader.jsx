@@ -3,23 +3,24 @@ import mobileLogo from "/src/assets/mobile-logo.png";
 import checkoutLockIcon from "/src/assets/icons/checkout-lock-icon.png";
 
 import "./CheckoutHeader.css";
+import { Link } from "react-router";
 
 function CheckoutHeader() {
   return (
     <div className="checkout-header">
       <div className="header-content">
         <div className="checkout-header-left-section">
-          <a href="/">
+          <Link to="/">
             <img className="logo" src={logo} />
             <img className="mobile-logo" src={mobileLogo} />
-          </a>
+          </Link>
         </div>
 
         <div className="checkout-header-middle-section">
           Checkout (
-          <a className="return-to-home-link" href="/">
+          <Link className="return-to-home-link" to="/">
             3 items
-          </a>
+          </Link>
           )
         </div>
 
