@@ -11,7 +11,7 @@ function ProductContainer({
     //851424120
     <div className="product-container">
       <div className="product-image-container">
-        <img className="product-image" src={productImage} />
+        <img className="product-image" src={productImage} loading="lazy" />
       </div>
 
       <div className="product-name limit-text-to-2-lines">{productName}</div>

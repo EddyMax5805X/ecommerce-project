@@ -5,7 +5,7 @@ import { NavLink } from "react-router";
 
 import "./Header.css";
 
-export default function Header() {
+export default function Header({ cartItems }) {
   return (
     <div className="header">
       <div className="left-section">
@@ -29,7 +29,7 @@ export default function Header() {
 
         <NavLink className="cart-link header-link" to="/checkout">
           <img className="cart-icon" src={cartIcon} />
-          <div className="cart-quantity">3</div>
+          <div className="cart-quantity">{cartItems}</div>
           <div className="cart-text">Cart</div>
         </NavLink>
       </div>
