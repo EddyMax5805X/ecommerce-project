@@ -5,7 +5,14 @@ import { NavLink } from "react-router";
 
 import "./Header.css";
 
-export default function Header({ cartItems }) {
+export default function Header({ cart }) {
+  let cartItems = 0;
+  if (Array.isArray(cart)) {
+    cart.forEach((cartItem) => {
+      cartItems += cartItem.quantity;
+    });
+  }
+
   return (
     <div className="header">
       <div className="left-section">
