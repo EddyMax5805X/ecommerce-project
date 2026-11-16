@@ -4,14 +4,10 @@ import cartIcon from "../assets/icons/cart-icon.png";
 import { NavLink } from "react-router";
 
 import "./Header.css";
+import { getCartItems } from "../utils/getCartItems";
 
 export default function Header({ cart }) {
-  let cartItems = 0;
-  if (Array.isArray(cart)) {
-    cart.forEach((cartItem) => {
-      cartItems += cartItem.quantity;
-    });
-  }
+  let cartItems = getCartItems(cart) || 0;
 
   return (
     <div className="header">

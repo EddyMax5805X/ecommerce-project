@@ -1,4 +1,5 @@
 import Checkmark from "../assets/icons/checkmark.png";
+import { formatMoney } from "../utils/money";
 
 function ProductContainer({
   productImage,
@@ -26,7 +27,7 @@ function ProductContainer({
         </div>
       </div>
 
-      <div className="product-price">MZN {productPrice.toFixed(2)}</div>
+      <div className="product-price">{formatMoney(productPrice)}</div>
 
       <div className="product-quantity-container">
         <select>

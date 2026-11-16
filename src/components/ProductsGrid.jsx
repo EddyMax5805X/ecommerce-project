@@ -24,7 +24,7 @@ function ProductsGrid() {
               productName={product.name}
               productRatingStars={product.rating.stars}
               productRatingCount={product.rating.count}
-              productPrice={product.price / 2}
+              productPrice={product.price}
               productQuantity={10}
             />
           );

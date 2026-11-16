@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router";
 
 import "./App.css";
-import HomePage from "./pages/homePage";
+import HomePage from "./pages/HomePage";
 import CheckoutPage from "./pages/checkout/CheckoutPage";
 import OrdersPage from "./pages/ordersPage";
 import TrackingPage from "./pages/TrackingPage";
@@ -10,10 +10,10 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 function App() {
-  const [cart, setCart] = useState(0);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    axios.get("/api/cart-items").then(({ data }) => {
+    axios.get("/api/cart-items?expand=product").then(({ data }) => {
       setCart(data);
     });
   }, []);
